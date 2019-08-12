@@ -12,7 +12,9 @@ Install the composer and node dependencies
 
 # npm install
 
-Ccreare database db_test (or any name)
+give write permission to the storage and public folder
+
+Creare database db_test (or any name)
 
 Copy the environment variable and update it to set the database and other details
 
