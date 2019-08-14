@@ -37,7 +37,7 @@ class UserController extends ApiController
         //$this->validate($request, $rules);
         $data = $request->all();
 
-        if ($request->has('photo')) {
+        if ($request->has('photo') && $request->has('photo') != '') {
             $data['photo'] = $request->photo->store('');
         }
 
@@ -88,7 +88,7 @@ class UserController extends ApiController
             $user->email = $request->email;
         }
 
-        if ($request->has('photo')) {
+        if ($request->has('photo') && $request->has('photo') != '') {
             $user->photo = $request->photo->store('');
         }
 
